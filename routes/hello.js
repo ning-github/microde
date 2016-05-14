@@ -5,6 +5,7 @@ var router = express.Router();
 
 var controllers = require('../controllers/hello.controller');
 
-router.get('/', controllers.getHello);
+router.post('/', controllers.setHiKey);
+router.get('/', controllers.getHiKey);
 
 module.exports = router;
